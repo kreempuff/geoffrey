@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  orchestrator:
+    image: orchestrator:v0.0.3
+    ports:
+      - "3000:3000"
+    build:
+      target: orchestrator
+      context: .
+  worker:
+    image: worker:v1
+    build:
+      target: worker
+      context: .
