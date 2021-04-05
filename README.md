@@ -6,7 +6,10 @@ after [Geoffrey](https://en.wikipedia.org/wiki/Joseph_Marcell) of **The Fresh Pr
 First things first, Rest in Peace to Uncle Phil.
 
 This project is motivated in large part due to the frustration felt 
-with some of the CI/CD tools out there. Here's hoping this 
+with some of the CI/CD tools out there. Here's hoping this is 
+different.
+
+![](https://imgs.xkcd.com/comics/standards.png)
 
 ## Installation
 
