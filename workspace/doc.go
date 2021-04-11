@@ -4,5 +4,5 @@ package workspace
 
 // Create creates a workspace with the specified
 func Create(name, path string) error {
-
+	return nil
 }
