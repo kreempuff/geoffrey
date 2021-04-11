@@ -1,0 +1,57 @@
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+change-template: |
+  #### $TITLE (#$NUMBER) - @$AUTHOR
+
+  $BODY 
+template: |
+  ## What’s Changed
+
+  $CHANGES
+categories:
+  - title: '🚀 Features'
+    labels: 
+      - 'feature'
+      - 'enhancement'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
+  - title: '🛠 Maintenance'
+    labels:
+      - 'chore'
+      - '♻️ refactor'
+      - 'docs'
+autolabeler:
+  - label: '♻️ refactor'
+    title:
+      - '^refactor\/.+/i'
+  - label: 'docs'
+    files:
+      - '*.md'
+    title:
+      - '/^docs?\/.+/i'
+  - label: 'bug'
+    title:
+      - '/fix/i'
+  - label: 'enhancement'
+    title:
+      - '/feat\/.+/i'
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'feature'
+      - 'enhancement'
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
+  patch:
+    labels:
+      - 'chore'
+      - '♻️ refactor'
+      - 'docs'
+  default: patch
