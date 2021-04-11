@@ -22,12 +22,12 @@ categories:
     labels:
       - 'chore'
       - '♻️ refactor'
-      - 'docs'
+      - 'documentation'
 autolabeler:
   - label: '♻️ refactor'
     title:
       - '^refactor\/.+/i'
-  - label: 'docs'
+  - label: 'documentation'
     files:
       - '*.md'
     title:
@@ -38,6 +38,9 @@ autolabeler:
   - label: 'enhancement'
     title:
       - '/feat\/.+/i'
+  - label: 'chore'
+    title:
+      - '/chore\/.+/i'
 version-resolver:
   major:
     labels:
@@ -53,5 +56,5 @@ version-resolver:
     labels:
       - 'chore'
       - '♻️ refactor'
-      - 'docs'
+      - 'documentation'
   default: patch
